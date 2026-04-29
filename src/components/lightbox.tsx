@@ -36,6 +36,19 @@ export default function Lightbox({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose, onPrevious, onNext]);
 
+  useEffect(() => {
+    if (!isOpen) {
+      document.body.classList.remove("has-lightbox-open");
+      return;
+    }
+
+    document.body.classList.add("has-lightbox-open");
+
+    return () => {
+      document.body.classList.remove("has-lightbox-open");
+    };
+  }, [isOpen]);
+
   if (!isOpen || !images[currentIndex]) return null;
 
   const handleTouchStart = (e: React.TouchEvent) => {

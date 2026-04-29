@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 
 const display = Playfair_Display({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ro">
-      <body className={`${display.variable} ${body.variable}`}>{children}</body>
+      <body className={`${display.variable} ${body.variable}`}>
+        {children}
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }

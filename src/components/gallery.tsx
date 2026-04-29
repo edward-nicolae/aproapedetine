@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import Lightbox from "./lightbox";
 import { GALLERY_IMAGES } from "@/lib/gallery-images";
@@ -20,14 +20,30 @@ export default function GallerySection({ categories }: GallerySectionProps) {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   const images = GALLERY_IMAGES[activeCategory] || [];
   const previewImages = images.slice(0, 12);
   const category = categories.find(c => c.id === activeCategory);
 
-  const handleImageClick = (index: number) => {
+  const focusGallerySection = () => {
+    const section = sectionRef.current;
+    if (!section) {
+      return;
+    }
+
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    section.focus({ preventScroll: true });
+  };
+
+  const openLightboxAt = (index: number) => {
+    focusGallerySection();
     setLightboxIndex(index);
     setLightboxOpen(true);
+  };
+
+  const handleImageClick = (index: number) => {
+    openLightboxAt(index);
   };
 
   const handlePrevious = () => {
@@ -44,8 +60,7 @@ export default function GallerySection({ categories }: GallerySectionProps) {
     }
 
     if (images.length === 1) {
-      setLightboxIndex(0);
-      setLightboxOpen(true);
+      openLightboxAt(0);
       return;
     }
 
@@ -54,8 +69,7 @@ export default function GallerySection({ categories }: GallerySectionProps) {
       nextIndex = (nextIndex + 1) % images.length;
     }
 
-    setLightboxIndex(nextIndex);
-    setLightboxOpen(true);
+    openLightboxAt(nextIndex);
   };
 
   if (!images.length) {
@@ -67,7 +81,7 @@ export default function GallerySection({ categories }: GallerySectionProps) {
   }
 
   return (
-    <section className="section" id="galerie">
+    <section className="section" id="galerie" ref={sectionRef} tabIndex={-1}>
       {/* Header */}
       <div className="gallery-header">
         <p className="eyebrow">Portofoliu</p>
@@ -121,7 +135,9 @@ export default function GallerySection({ categories }: GallerySectionProps) {
       <div className="gallery-cta-row">
         <button
           className="gallery-btn-primary"
-          onClick={() => { setLightboxIndex(0); setLightboxOpen(true); }}
+          onClick={() => {
+            openLightboxAt(0);
+          }}
         >
           Deschide galeria ({images.length} foto)
         </button>
