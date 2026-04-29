@@ -1,5 +1,5 @@
 app = "aproapedetine"
-primary_region = "otp"
+primary_region = "fra"
 
 [build]
   dockerfile = "Dockerfile"
