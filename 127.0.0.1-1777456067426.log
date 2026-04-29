@@ -1,0 +1,30 @@
+D:\Proiecte\aproapedetine\node_modules\next\dist\compiled\react-dom\cjs\react-dom-client.development.js:25630 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783682903314.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783686236647.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783689569980.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783726236643.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783729569976.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783736236642.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783782903304.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783796236636.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783799569969.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783862903296.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783872903295.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783912903291.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+D:\src\shared\lib\utils\warn-once.ts:6 Image with src "/images/gallery/nunti/1137783912903291.jpg" is using quality "95" which is not configured in images.qualities. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+(anonymous) @ D:\src\shared\lib\utils\warn-once.ts:6
+
+D:\Proiecte\aproapedetine\node_modules\three\build\three.module.js:15631 THREE.WebGLRenderer: Context Lost.
